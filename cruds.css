@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+.cruds{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+}
+#product_name , #Extension{  width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 4px;
+    background-color: rgb(248, 214, 162);
+    color: rgb(109, 82, 63);
+}
+input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    margin: 4px 0;
+    padding: 4px;
+    background-color: rgb(248, 214, 162);
+    color: rgb(109, 82, 63);
+}
+input:focus{
+background-color: rgba(240, 147, 60, 0.301);
+transform:scale(1.1);
+}
+#details{    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(248, 214, 162);
+    margin: 4px 0;
+    padding: 4px;
+    color: rgb(109, 82, 63);}
+.total input{
+    width: 20%;
+}
+#sum{
+    background-color: red;
+    padding: 5px 6px;
+    border-radius: 4px;
+
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 4px 0;
+    cursor: pointer;
+    background-color:  hsl(12, 98%, 52%);
+    color: black;
+}
+button:hover{
+    letter-spacing: 1px;
+    background-color:  hsl(12, 93%, 84%);
+    color: rgb(255, 255, 255);
+
+}
+
+.searchbtn{
+display: flex;
+justify-content:space-between;
+}
+.searchbtn button{
+    width: 45%;
+}
+table{
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+td,th{
+    padding: 5px;
+}
+#deleteall{
+    margin: 20px 0;
+}
+
+/* =============================  media quiery  =========================== */
+
+@media only screen and (max-width:991px){
+ .body{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content:flex-start;
+    padding:2px 20px 2px 20px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+ } 
+ 
+ .head{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content:center;
+    padding:2px 20px 2px 20px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+ } 
+
+ #product_name , #Extension{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content:center;
+    padding:2px 20px 2px 20px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+ }
+
+ .input{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content:center;
+    padding:2px 20px 2px 20px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+ } 
+
+ .total input{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content:center;
+    padding:2px 20px 2px 20px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+ }
+
+ #sum{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content:center;
+    padding:2px 20px 2px 20px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+ }
+ .button{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content:center;
+    padding:2px 20px 2px 20px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+ } 
+
+ .button:hover{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content:center;
+    padding:2px 20px 2px 20px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+ } 
+
+ .searchbtn{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content:center;
+    padding:2px 20px 2px 20px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+ }
+
+.searchbtn button{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content:center;
+    padding:2px 20px 2px 20px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+} 
+
+.table{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content:center;
+    padding:2px 20px 2px 20px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.td,th{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content:center;
+    padding:2px 20px 2px 20px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+#deleteall{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content:center;
+    padding:2px 20px 2px 20px;
+    margin-bottom: 1%;
+}
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="cruds.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="myFunction()">Light dark mode</button>
+
+    <div class="cruds">
+      <div class="head">
+        <h1>Pricing</h1>
+        <h3>project Price</h3>
+      </div>
+      <div class="inputs">
+        <!-- <input type="text" id="product_name" placeholder="product name"> -->
+        <select id="product_name" name="product_name">
+          <option value="full project">full project</option>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="Js">JavaScript</option>
+        </select>
+        <div class="total">
+          <input
+            type="number"
+            onkeyup="gettotal()"
+            placeholder="price"
+            id="price"
+          />
+          <input
+            type="number"
+            onkeyup="gettotal()"
+            disabled
+            placeholder="taks"
+            id="taks"
+          />
+          <input
+            type="number"
+            onkeyup="gettotal()"
+            disabled
+            placeholder="ads"
+            id="ads"
+          />
+          <input
+            type="number"
+            onkeyup="gettotal()"
+            disabled
+            placeholder="discount"
+            id="discount"
+          />
+          <span id="sum">total</span>
+        </div>
+
+        <input type="date" placeholder="deadline" id="deadline" />
+        <!-- <input type="text" id="Extension" placeholder="Extension"> -->
+        <select id="Extension" name="Extension">
+          <option value="BootStrab">BootStrab</option>
+          <option value="Tailwind">Tailwind</option>
+        </select>
+        <textarea name="details" id="details" cols="30" rows="10" placeholder="details"></textarea>
+        <button id="Confirm" onclick="addproduct()">Confirm</button>
+      </div>
+      <div class="outputs">
+        <div class="searchblock">
+          <input
+            type="text"
+            placeholder="search"
+            onkeyup="searchfunc(this.value)"
+            id="search"
+          />
+          <div class="searchbtn">
+            <button onclick="getsearchmood(this.id)" id="searchdeadline">
+              search by deadline
+            </button>
+            <button onclick="getsearchmood(this.id)" id="searchname">
+              search by name
+            </button>
+          </div>
+        </div>
+        <div id="deleteall"></div>
+        <table id="products">
+          <tr>
+            <th>ID</th>
+            <th>TITLE</th>
+            <th>PRICE</th>
+            <th>TAXSES</th>
+            <th>ADS</th>
+            <th>DISCOUNT</th>
+            <th>TOTAL</th>
+            <th>deadline</th>
+            <th>UPDATE</th>
+            <th>DELETE</th>
+          </tr>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="cruds.js"></script>
+  </body>
+</html>
